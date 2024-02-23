@@ -1,0 +1,22 @@
+{
+  "name": "ios-keyword-extractor",
+  "version": "1.0.0",
+  "description": "extract ios keywords",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paigeshin/ios-keyword-extractor.git"
+  },
+  "keywords": [
+    "aso"
+  ],
+  "author": "paige shin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paigeshin/ios-keyword-extractor/issues"
+  },
+  "homepage": "https://github.com/paigeshin/ios-keyword-extractor#readme"
+}
