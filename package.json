@@ -1,6 +1,6 @@
 {
   "name": "ios-keyword-extractor",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "extract ios keywords",
   "main": "index.js",
   "scripts": {

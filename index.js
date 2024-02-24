@@ -41,7 +41,11 @@ function extractKeywords(titlesArray, existingKeywords, newKeywords) {
     // Split the keyword into individual words after converting it to lowercase and removing non-alphanumeric characters.
     const currentKeywords = keyword
       .toLowerCase()
-      .replace(/[^a-zA-Z0-9\s]/g, "")
+      .replace(
+        /[^\w\s\u3040-\u30FF\u3400-\u4DBF\u4E00-\u9FFF\uAC00-\uD7A3]/g,
+        ""
+      )
+      // .replace(/[^a-zA-Z0-9\s]/g, "")
       .split(" ");
 
     // Calculate the total character count of the current keyword.
