@@ -7,6 +7,7 @@ const {
 
 // Define a function to extract keywords from given titles and subtitles, and process them.
 function extractKeywords(titlesArray, existingKeywords, newKeywords) {
+  let trackingKeywords = [];
   // Initialize an array to hold the result keywords.
   let resultKeywords = [];
   // Initialize a counter for the number of characters in the result keywords.
@@ -65,12 +66,16 @@ function extractKeywords(titlesArray, existingKeywords, newKeywords) {
     }
 
     // Add the current keywords to the result and update the character count.
+    trackingKeywords.push(keyword);
     resultKeywords.push(...currentKeywords);
     charCount += totalWordCount;
   });
 
   // Return the processed list of keywords.
-  return resultKeywords;
+  return {
+    tracking: trackingKeywords,
+    appstore: resultKeywords,
+  };
 }
 
 module.exports = {
